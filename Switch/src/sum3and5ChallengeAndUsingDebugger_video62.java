@@ -10,6 +10,7 @@ public class sum3and5ChallengeAndUsingDebugger_video62 {
                 System.out.println("This number meets conditions: " + i);
                 countOfMatches++;
                 sumOfMatches += i;
+            }
                 if (countOfMatches == 5) {
                     System.out.println("Total Sum is " + sumOfMatches);
                     break;
@@ -17,5 +18,3 @@ public class sum3and5ChallengeAndUsingDebugger_video62 {
             }
         }
     }
-
-}
