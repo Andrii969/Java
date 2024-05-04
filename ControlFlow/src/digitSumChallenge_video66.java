@@ -2,7 +2,7 @@ public class digitSumChallenge_video66 {
 
     public static void main(String[] args) {
 
-        System.out.println(sumDigits(0));
+        System.out.println(sumDigits(1234));
 
     }
 

@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="2c259001-25f8-497d-a364-e5f2f42ca4a5" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../ControlFlow/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../ControlFlow/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ControlFlow/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ControlFlow/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ControlFlow/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Switch.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../ControlFlow/ControlFlow.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/codingExercise_13.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ControlFlow/src/codingExercise_13.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/codingExercise_14.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ControlFlow/src/codingExercise_14.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/codingExercise_15.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ControlFlow/src/codingExercise_15.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/digitSumChallenge_video66.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ControlFlow/src/digitSumChallenge_video66.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sum3and5ChallengeAndUsingDebugger_video62.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ControlFlow/src/sum3and5ChallengeAndUsingDebugger_video62.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/switchStatement_video56.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ControlFlow/src/switchStatement_video56.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/switchStatement_video57.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ControlFlow/src/switchStatement_video57.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/switchStatement_video58.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ControlFlow/src/switchStatement_video58.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/switchStatement_video59.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ControlFlow/src/switchStatement_video59.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/theForStatementChallenge2_video61.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ControlFlow/src/theForStatementChallenge2_video61.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/theForStatementChallenge_video61.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ControlFlow/src/theForStatementChallenge_video61.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/theForStatement_video60.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ControlFlow/src/theForStatement_video60.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/theForStatement_video61.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ControlFlow/src/theForStatement_video61.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/whileLoopChallenge2a_video65.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ControlFlow/src/whileLoopChallenge2a_video65.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/whileLoopChallenge2b_video65.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ControlFlow/src/whileLoopChallenge2b_video65.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/whileLoopChallenge_video65.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ControlFlow/src/whileLoopChallenge_video65.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/whileStatement_video64.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ControlFlow/src/whileStatement_video64.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
+  <component name="ProjectId" id="2fSwXezZa4BmsYXOhlwE3XfnHFb" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.codingExercise_13.executor": "Run",
+    "Application.codingExercise_14.executor": "Run",
+    "Application.codingExercise_15.executor": "Run",
+    "Application.digitSumChallenge_video66.executor": "Run",
+    "Application.sum3and5ChallengeAndUsingDebugger_video62.executor": "Run",
+    "Application.switchStatement_video56.executor": "Run",
+    "Application.switchStatement_video57.executor": "Run",
+    "Application.switchStatement_video58.executor": "Run",
+    "Application.switchStatement_video59.executor": "Run",
+    "Application.test.executor": "Run",
+    "Application.theForStatementChallenge2_video61.executor": "Run",
+    "Application.theForStatementChallenge_video61.executor": "Run",
+    "Application.theForStatementChallenge_video62.executor": "Run",
+    "Application.theForStatement_video60.executor": "Run",
+    "Application.theForStatement_video61.executor": "Run",
+    "Application.whileLoopChallenge2_video65.executor": "Run",
+    "Application.whileLoopChallenge2b_video65.executor": "Run",
+    "Application.whileLoopChallenge_video65.executor": "Run",
+    "Application.whileStatement_video64.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/asavonov/IdeaProjects/ControlFlow",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "editor.preferences.appearance"
+  }
+}]]></component>
+  <component name="RunManager" selected="Application.digitSumChallenge_video66">
+    <configuration name="digitSumChallenge_video66" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="digitSumChallenge_video66" />
+      <module name="ControlFlow" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="whileLoopChallenge2_video65" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="whileLoopChallenge2_video65" />
+      <module name="ControlFlow" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="whileLoopChallenge2b_video65" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="whileLoopChallenge2b_video65" />
+      <module name="ControlFlow" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="whileLoopChallenge_video65" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="whileLoopChallenge_video65" />
+      <module name="ControlFlow" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="whileStatement_video64" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="whileStatement_video64" />
+      <module name="ControlFlow" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.digitSumChallenge_video66" />
+        <item itemvalue="Application.whileLoopChallenge2b_video65" />
+        <item itemvalue="Application.whileLoopChallenge2_video65" />
+        <item itemvalue="Application.whileLoopChallenge_video65" />
+        <item itemvalue="Application.whileStatement_video64" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2c259001-25f8-497d-a364-e5f2f42ca4a5" name="Changes" comment="" />
+      <created>1713807831688</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1713807831688</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="i % 3" language="JAVA" />
+        <watch expression="i % 5" language="JAVA" />
+      </configuration>
+    </watches-manager>
+  </component>
+</project>
