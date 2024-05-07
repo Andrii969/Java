@@ -7,12 +7,10 @@ public class codingExercise_19a {
     }
 
     public static boolean hasSharedDigit(int a, int b) {
-        int initA = a;
-        int initB = b;
 
         while (a > 0) {
             int digitA = a % 10; // Get the rightmost digit of a
-            int tempB = initB; // Reset tempB for each digit of a
+            int tempB = b; // Reset tempB for each new digit of a
             while (tempB > 0) {
                 int digitB = tempB % 10; // Get the rightmost digit of b
                 if (digitA == digitB) {
