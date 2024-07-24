@@ -33,6 +33,10 @@ public class Point {
 
     public double distance(Point a) {
         return distance(a.x, a.y);
+        // In the context of the method distance(Point a), a is a parameter that represents
+        // another instance of the Point class. This other instance has its own x and y fields.
+        // When you call the method and pass a Point object as an argument,
+        // a refers to that specific Point object.
     }
 
     public double distance(int x, int y) { // B

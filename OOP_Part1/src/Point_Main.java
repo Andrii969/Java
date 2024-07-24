@@ -5,6 +5,8 @@ public class Point_Main {
         Point second = new Point(3, 1);
         System.out.println("distance(0,0)= " + first.distance());
         System.out.println("distance(second)= " + first.distance(second));
+        // Alternatively:
+        // System.out.println("distance(second)= " + first.distance(second.getX(), second.getY()));
         System.out.println("distance(2,2)= " + first.distance(2, 2));
         Point point = new Point();
         System.out.println("distance()= " + point.distance());

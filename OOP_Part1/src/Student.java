@@ -13,7 +13,7 @@ public class Student {
     }
 
     @Override
-    public String toString() {
+    public String toString() { // special method
         return "Student{" +
                 "id='" + id + '\'' +
                 ", name='" + name + '\'' +

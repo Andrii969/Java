@@ -23,9 +23,7 @@ public class Customer {
     }
 
     public Customer() {
-        this.name = "No name";
-        this.creditLimit = 0;
-        this.emailAddress = "No email address";
+    this("Anonymous", 0, "anonymous@g.com");
     }
 
     public Customer(String name, String emailAddress) {

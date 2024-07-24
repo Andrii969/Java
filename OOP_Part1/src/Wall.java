@@ -8,12 +8,10 @@ public class Wall {
 
     }
 
-    public Wall(double width, double height) {
-        if (width < 0) {
-            this.width = 0;
-        } else {
-            this.width = width;
-        }
+    public Wall(double width, double height) { // constructor declaration
+        setWidth(width); // setter methods called
+        setHeight(height); // setter methods called
+
 
         if (height < 0) {
             this.height = 0;
@@ -30,7 +28,7 @@ public class Wall {
         return height;
     }
 
-    public void setWidth(double width) {
+    public void setWidth(double width) { // setter method with validation
         if (width < 0) {
             this.width = 0;
         } else {
@@ -38,7 +36,7 @@ public class Wall {
         }
     }
 
-    public void setHeight(double height) {
+    public void setHeight(double height) { // setter method with validation
         if (height < 0) {
             this.height = 0;
         } else {
