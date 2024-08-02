@@ -11,7 +11,20 @@ public class Movie { // Polymorphism
         System.out.println(title + " is a " + instanceType + " film");
     }
 
-    public static Movie getMovie(String type, String title) {
+// In the createMovieInstance method of the Movie class, a factory pattern is implemented.
+// This pattern is used to create instances of different subclasses based on the provided type.
+// This approach allows for creating different types of movies (Adventure, Comedy, ScienceFiction) without directly
+// referencing their constructors outside of this method, promoting loose coupling and enhancing maintainability.
+
+//Class-Level Method: A static method belongs to the class itself rather than to instances of the class.
+// This means you can call createMovieInstance without creating an instance of Movie.
+// This is useful for factory methods because you often need to create instances of the class
+// or its subclasses without having an existing instance.
+//Convenience: You can call the createMovieInstance method directly using the class name,
+// like Movie.createMovieInstance("A", "Indiana Jones"), without needing to instantiate a Movie object first.
+//Instance Independence: Since factory methods are typically used to create objects, it makes sense for
+// them to be static because they don't depend on the state of any particular instance of the class.
+    public static Movie createMovieInstance(String type, String title) {
         return switch (type.toUpperCase().charAt(0)) {
             case 'A' -> new Adventure(title);
             case 'C' -> new Comedy(title);
@@ -22,6 +35,10 @@ public class Movie { // Polymorphism
 }
 
 class Adventure extends Movie {
+
+    public void watchAdventure() {
+        System.out.println("Watching an Adventure");
+    }
 
     public Adventure(String title) {
         super(title);
@@ -37,6 +54,10 @@ class Adventure extends Movie {
 
 class Comedy extends Movie {
 
+    public void watchComedy() {
+        System.out.println("Watching an Comedy");
+    }
+
     public Comedy(String title) {
         super(title);
     }
@@ -50,6 +71,10 @@ class Comedy extends Movie {
 }
 
 class ScienceFiction extends Movie {
+
+    public void watchScienceFiction() {
+        System.out.println("Watching an Science Fiction");
+    }
 
     public ScienceFiction(String title) {
         super(title);

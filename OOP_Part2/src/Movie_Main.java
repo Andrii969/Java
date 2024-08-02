@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Movie_Main { // Polymorphism
 
     public static void main(String[] args) {
@@ -16,7 +18,23 @@ public class Movie_Main { // Polymorphism
 //                                                    // cannot be accessed through this reference.
 //        comedyTwo.watchMovie();
 
-        Movie theMovie = Movie.getMovie("Adventure", "Adventure Movie");
-        theMovie.watchMovie();
+//        Movie theMovie = Movie.createMovieInstance("Adventure", "Adventure Movie");
+//        theMovie.watchMovie();
+
+        Scanner s = new Scanner(System.in);
+        while (true) {
+            System.out.println("Please, choose the movie library");
+            String type = s.nextLine();
+            if ("Qq".contains(type)) {
+                break;
+            }
+            System.out.println("Please, type the movie name");
+            String title = s.nextLine();
+            if ("Qq".contains(title)) {
+                break;
+            }
+            Movie theFilm = Movie.createMovieInstance(type, title);
+            theFilm.watchMovie();
+        }
     }
 }
