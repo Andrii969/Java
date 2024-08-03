@@ -55,7 +55,7 @@ class Adventure extends Movie {
 class Comedy extends Movie {
 
     public void watchComedy() {
-        System.out.println("Watching an Comedy");
+        System.out.println("Watching a Comedy");
     }
 
     public Comedy(String title) {
@@ -73,7 +73,7 @@ class Comedy extends Movie {
 class ScienceFiction extends Movie {
 
     public void watchScienceFiction() {
-        System.out.println("Watching an Science Fiction");
+        System.out.println("Watching a Science Fiction");
     }
 
     public ScienceFiction(String title) {
