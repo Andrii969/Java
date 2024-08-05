@@ -36,7 +36,7 @@ public class Item {
 
     public static void printItem(String name, double price) { // method is declared as static because it does not depend on the
                                                             // instance variables of the Item class. Instead, it performs a generic operation
-        System.out.printf("%20s:%6.2f%n", name, price);
+        System.out.printf("%20s:%6.2f%n", name, price); // place for 20 characters for string, and 6 numbers for a number, with 2 places after comma
     }
 
     public void printItem() {
