@@ -38,5 +38,12 @@ public class video134_arraysVsArrayLists {
         List<String> newList = Arrays.asList("Sunday", "Monday", "Tuesday");
         System.out.println(newList);
 
+        // Creating Arrays from ArrayLists
+        ArrayList<String> stringLists = new ArrayList<>(List.of("Jan", "Feb","Mar")); // creates an immutable list containing the strings "Jan", "Feb", and "Mar".
+        String[] stringArray = stringLists.toArray(new String[0]); // If the array size you pass is smaller than the size of the ArrayList (e.g., new String[0]
+                                                                    // for a 0 element ArrayList), the toArray method will ignore the passed array and create
+                                                                    // a new array of the appropriate size (in this case, 3) to fit all elements.
+        System.out.println(Arrays.toString(stringArray));
+
     }
 }
