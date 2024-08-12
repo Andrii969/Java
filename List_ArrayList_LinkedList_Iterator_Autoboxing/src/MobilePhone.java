@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-public class MobilePhone { // can be improved, there is some duplicated code
+public class MobilePhone { // can be improved, there is some duplicated code, the findContact(String contactName) can be used in many places
 
     private String myNumber;
     private ArrayList<Contact> myContacts;
