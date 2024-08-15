@@ -30,27 +30,52 @@ public class video140_linkedListChallenge {
         System.out.println("Here is the list of places to visit :" + placesToVisit);
         ListIterator<Place> iterator = placesToVisit.listIterator();
         boolean notQuit = true;
+        boolean forward = true; // Tracks the direction of iteration
+
+        printOptions();
+
         while (notQuit) {
-            printOptions();
-            String input = scanner.nextLine();
-            switch (input.toLowerCase()) {
-                case "f" -> {
+            System.out.println("Enter value: ");
+            String input = scanner.nextLine().toUpperCase().substring(0,1);
+
+            if (!iterator.hasPrevious()) { // If at the beginning of the list
+                System.out.println("Originating : " + iterator.next());
+                forward = true;
+            }
+            if (!iterator.hasNext()) { // If at the end of the list
+                System.out.println("Final : " + iterator.previous());
+                forward = false;
+            }
+
+            switch (input) {
+                case "F" -> {
+                    if (!forward) {            // Reversing Direction from backward to forward
+                        forward = true;         // Set direction to forward
+                        if (iterator.hasNext()) {
+                            iterator.next();  // Adjust position forward to avoid repetition
+                        }
+                    }
                     if (iterator.hasNext()) {
-                        System.out.println(iterator.next());
-                    } else {
-                        System.out.println("You are at the end of the list.");
+                        System.out.println(iterator.next()); // Move forward and print the place
                     }
                 }
-                case "b" -> {
+                case "B" -> {
+                    if (forward) {           // Reversing Direction from forward to backward
+                        forward = false;        // Set direction to backward
+                        if (iterator.hasPrevious()) {
+                            iterator.previous();  // Adjust position backward to avoid repetition
+                        }
+                    }
                     if (iterator.hasPrevious()) {
-                        System.out.println(iterator.previous());
-                    } else {
-                        System.out.println("You are at the start of the list.");
+                        System.out.println(iterator.previous()); // Move backward and print the place
                     }
                 }
-                case "l" -> System.out.println(placesToVisit);
-                case "m" -> printOptions();
-                case "q" -> notQuit = false;
+                case "L" -> System.out.println(placesToVisit);
+                case "M" -> printOptions();
+                case "Q" -> {
+                    notQuit = false;
+                    break;
+                }
                 default -> System.out.println("Invalid option. Please try again.");
             }
         }
