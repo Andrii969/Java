@@ -2,24 +2,53 @@ package dev.abstractChallenge;
 
 import java.util.ArrayList;
 
-public class Store { // IN PROGRESS
+record OrderItem(int qty, Product product) {}
 
-    private String storeName;
-    private ArrayList<Product> products;
-    private ArrayList<Product> orderItems;
+public class Store {
 
-    public Store(String storeName) {
-        this.storeName = storeName;
-        products = new ArrayList<Product>();
-        orderItems = new ArrayList<Product>();
+    private static ArrayList<Product> storeProducts = new ArrayList<>();
+
+    public static void main(String[] args) {
+
+        storeProducts.add(new ArtObject("Oil Painting", "Painted in 2010", 1350));
+        storeProducts.add(new ArtObject("Sculpture", "Produced in 1950", 2000));
+        storeProducts.add(new ArtObject("Desk", "Mahogany Desk", 3000));
+
+        listProducts();
+
+        System.out.println("\nOrder 1");
+        var order1 = new ArrayList<OrderItem>();
+        addItemToOrder(order1, 0, 1);
+        addItemToOrder(order1, 1, 2);
+        addItemToOrder(order1, 2, 1);
+
+        printOrder(order1);
+//        Order 1
+//         1 qty at $ 1350.00 each, Oil Painting    Painted in 2010
+//         2 qty at $ 2000.00 each, Sculpture       Produced in 1950
+//        Sales Total = $5350.00
+
     }
 
-    private Product findProduct(String productName) {
-        for (Product product : products) {
-            if (product.getName().equalsIgnoreCase(productName)) {
-                return product;
-            }
+    public static void listProducts() {
+        for (var item : storeProducts) { // usually var used for the places that are very general
+            System.out.println("-".repeat(30));
+            item.showDetails();
         }
-        return null;
     }
+
+    public static void addItemToOrder(ArrayList<OrderItem> order, int orderIndex, int qty) {
+        order.add(new OrderItem(qty, storeProducts.get(orderIndex)));
+    }
+
+    public static void printOrder(ArrayList<OrderItem> order) {
+        double salesTotal = 0;
+        for (var item : order) {
+            item.product().printPricedItem(item.qty());
+            salesTotal += item.product().getSalesPrice(item.qty());
+        }
+        System.out.printf("Sales Total = $%6.2f %n", salesTotal);
+    }
+
+
 }
