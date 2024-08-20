@@ -12,12 +12,13 @@ public class Store {
 
         storeProducts.add(new ArtObject("Oil Painting", "Painted in 2010", 1350));
         storeProducts.add(new ArtObject("Sculpture", "Produced in 1950", 2000));
-        storeProducts.add(new ArtObject("Desk", "Mahogany Desk", 3000));
+        storeProducts.add(new Furniture("Desk", "Mahogany Desk", 3000));
 
         listProducts();
 
         System.out.println("\nOrder 1");
         var order1 = new ArrayList<OrderItem>();
+//        order1.add(new OrderItem(2, storeProducts.get(0)));
         addItemToOrder(order1, 0, 1);
         addItemToOrder(order1, 1, 2);
         addItemToOrder(order1, 2, 1);
