@@ -1,6 +1,6 @@
 package dev.abstractChallenge;
 
-public abstract class Product { // IN PROGRESS
+public abstract class Product {
 
     protected String type; // protected - subclasses can access and modify them directly as well
     protected double price;

@@ -1,6 +1,6 @@
 package dev.interfaces;
 
-public class Bird extends Animal implements FlightEnabled, Trackable {
+public class Bird extends Animal implements FlightEnabled, Trackable { // class can extend only one class, but implement multiple interfaces
     // This class, because it implements these two interfaces,
     // now has to implement the methods on FlightEnabled and Trackable,
     // as well as methods from the Animal abstract class.
