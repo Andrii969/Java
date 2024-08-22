@@ -51,10 +51,10 @@ public class video155_interfaces {
         double milesTraveled = kmsTraveled * FlightEnabled.KM_TO_MILES;
         System.out.printf("The truck traveled %.2f km or %.2f miles %n", kmsTraveled, milesTraveled);
 
-        LinkedList<FlightEnabled> fliers = new LinkedList<>(); // is an ArrayList that can hold objects of any type that implements the FlightEnabled interface.
+        LinkedList<FlightEnabled> fliers = new LinkedList<>();
         fliers.add(bird);
 
-        List<FlightEnabled> betterFliers = new ArrayList<>();
+        List<FlightEnabled> betterFliers = new ArrayList<>(); // is an ArrayList that can hold objects of any type that implements the FlightEnabled interface.
         betterFliers.add(bird);
 
         triggerFliers(fliers);
