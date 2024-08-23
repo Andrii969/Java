@@ -9,26 +9,33 @@ public class Node extends ListItem{
 
     @Override
     ListItem next() {
-        return null;
+        return rightLink;
     }
 
     @Override
     ListItem setNext(ListItem listItem) {
-        return null;
+        this.rightLink = listItem;
+        return rightLink;
     }
 
     @Override
     ListItem previous() {
-        return null;
+        return leftLink;
     }
 
     @Override
     ListItem setPrevious(ListItem listItem) {
-        return null;
+        this.leftLink = listItem;
+        return leftLink;
     }
 
     @Override
     int compareTo(ListItem listItem) {
-        return 0;
+        if (listItem != null) {
+            System.out.println((String) this.getValue() + " VS " + (String) listItem.getValue());
+            return ((String) this.getValue()).compareTo((String) listItem.getValue()); // returns -1 if this value is greater, 1 if it's less, 0 if equal
+        } else {
+            return -1;
+        }
     }
 }
