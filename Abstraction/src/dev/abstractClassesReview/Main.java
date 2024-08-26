@@ -14,9 +14,10 @@ public class Main {
         ArrayList<Animal> animals = new ArrayList<>(); //  if I type it with Animal, this list can hold any kind of Animal and that includes both Fish and Dog.
         animals.add(dog);
         animals.add(new Fish("Goldfish", "small", 0.100));
+        animals.add(new Horse("Clydesdale", "large", 1000));
 
         for (Animal animal : animals) { //  And at runtime, instances that inherit from that class can use polymorphism to execute code specific to the concrete type.
-            doAnimalStuff(animal);
+            doAnimalStuff(animal); // var unknownObjet = animal; if (unknownObjet instanceof Fish) { System.out.println("FISH"); } // FISH
             System.out.println("-".repeat(30));
         }
     }
@@ -28,7 +29,8 @@ public class Main {
                                                         // on the object that it gets at runtime.
         animal.makeNoise();
         animal.move("slow");
+        if (animal instanceof Mammal mammal) { // or if (animal instanceof Horse horse)
+            mammal.shedHair();
+        }
     }
-
-
 }

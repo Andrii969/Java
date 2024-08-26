@@ -13,7 +13,7 @@ public abstract class Mammal extends Animal {
 
     @Override
     public void move(String speed) { // concrete method overrides abstract method from Animal, so Mammal's subclasses don't have to override the method
-        System.out.println(getExplicitType() + " ");
+        System.out.print(getExplicitType() + " ");
         System.out.println(speed.equals("slow") ? "walks" : "runs");
     }
 
