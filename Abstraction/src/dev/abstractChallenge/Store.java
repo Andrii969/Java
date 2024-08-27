@@ -17,7 +17,8 @@ public class Store {
         listProducts();
 
         System.out.println("\nOrder 1");
-        var order1 = new ArrayList<OrderItem>();
+        var order1 = new ArrayList<OrderItem>(); // You can use the var keyword for typed ArrayLists, but when you do, you do have to specify the type,
+                                                    // on the right side of the assignment operator in angle brackets. That's what I've done here.
 //        order1.add(new OrderItem(2, storeProducts.get(0)));
         addItemToOrder(order1, 0, 1);
         addItemToOrder(order1, 1, 2);

@@ -16,9 +16,9 @@ public class Main {
 
         myStore.listProducts(myStore);
 
-        myStore.placeOrder(1, desk);
-        myStore.placeOrder(2, detectiveBook);
-        myStore.placeOrder(3, horrorBook);
+        myStore.placeOrder(1, 0);
+        myStore.placeOrder(2, 1);
+        myStore.placeOrder(3, 2);
 
         myStore.listOrders(myStore);
 

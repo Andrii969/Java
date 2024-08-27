@@ -24,15 +24,16 @@ public class Store {
         }
     }
 
-    public void placeOrder(int quantity, ProductForSale product) {
-        orderItems.add(new OrderItem(quantity, product));
+    public void placeOrder(int quantity, int productIndex) {
+        orderItems.add(new OrderItem(quantity, productsForSale.get(productIndex)));
     }
 
     public void listOrders(Store store) {
         System.out.println("Ordered:");
         double totalPrice = 0;
         for(OrderItem item : store.orderItems) {
-            item.product.showDetails();
+            item.product.printPricedItem(item.quantity);
+            System.out.println();
             totalPrice += item.product.getSalesPrice(item.quantity);
         }
         System.out.println("Total: " + totalPrice);
