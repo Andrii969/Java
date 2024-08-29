@@ -30,7 +30,11 @@ public class Main {
 
         Trackable truck = new Truck(); // truck can ONLY use methods defined in the Trackable interface (not even from Truck)
                                         // IF --> Truck truck = new Truck(); could use methods from Truck class and Trackable interface (as it implements it)
-        truck.track(); // a Truck can only be tracked because it implements the Trackable interface //
+        truck.track(); // a Truck can only be tracked because it implements the Trackable interface
+
+        double kmsTraveled = 100;
+        double milesTraveled = kmsTraveled * FlightEnabled.KM_TO_MILES;
+        System.out.printf("The truck traveled %.2f km or %.2f miles%n", kmsTraveled, milesTraveled);
 
     }
 
