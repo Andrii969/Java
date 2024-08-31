@@ -4,6 +4,8 @@ public interface OrbitEarth extends FlightEnabled {
 
     void achieveOrbit();
 
+    void sendData();
+
     private void log(String description) { // subclasses aren't forced to override this method
                                             // public static methods allow us to include helper methods on the interface type itself
         var currentDate = new java.util.Date();

@@ -1,6 +1,6 @@
 package dev.interfacesReviewPart4;
 
-public enum FlightStages implements Trackable {GROUNDED, LAUNCH, CRUISE, DATA_COLLECTION;
+public enum FlightStages implements Trackable {GROUNDED, LAUNCH, CRUISE, DATA_COLLECTION, DATA_SENDING;
     // Both records and enums can implement interfaces. But they can't extend classes, abstract or not.
 
     @Override
