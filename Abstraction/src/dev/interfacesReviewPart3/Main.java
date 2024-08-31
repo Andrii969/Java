@@ -59,8 +59,6 @@ public class Main {
         doBetterFlying(fliers);
         doBetterFlying(betterFliers);
         doBetterFlying(otherFliers);
-
-
     }
 
 

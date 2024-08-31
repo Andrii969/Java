@@ -23,6 +23,12 @@ public class video146_enum {
             }
         }
 
+        System.out.println("-".repeat(30));
+        System.out.println(DayOfTheWeek.values().length + " days in a week");
+        for (int i = 0; i < DayOfTheWeek.values().length; i++) {
+            System.out.println(DayOfTheWeek.values()[i]);
+        }
+
 
     }
 
