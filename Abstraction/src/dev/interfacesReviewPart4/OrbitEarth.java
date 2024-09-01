@@ -21,6 +21,10 @@ public interface OrbitEarth extends FlightEnabled {
     default FlightStages transition(FlightStages stage) {
         FlightStages nextStage = FlightEnabled.super.transition(stage); // default FlightStages transition(FlightStages stage) {
                                                                         // FlightStages nextStage = stage.getNextStage(); // using method from the FlightStages enum
+                                                                                                                                                                     //     public FlightStages getNextStage() {
+                                                                                                                                                                     //        FlightStages[] allStages = FlightStages.values();
+                                                                                                                                                                     //        return allStages[(ordinal() + 1) % allStages.length]; // (0+1) % 4 -> 1; (1+1) % 4 -> 2; (2+1) % 4 -> 3; (3+1) % 4 -> 0
+                                                                                                                                                                     //    }
                                                                         // System.out.println("Transitioning from " + stage + " to " + nextStage);
                                                                         // return nextStage;
                                                                         // }

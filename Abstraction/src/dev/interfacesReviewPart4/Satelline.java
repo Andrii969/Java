@@ -35,8 +35,8 @@ public class Satelline implements OrbitEarth {
 
     public void transition(String description) {
         System.out.println(description);
-        stage = transition(stage);  // method from OrbitEarth interface
-        stage.track(); // method from FlightStages enum
+        stage = OrbitEarth.super.transition(stage);  // method from OrbitEarth interface
+        stage.track(); // method from FlightStages enum -> Monitoring {STAGE_NAME}
 
     }
 }
