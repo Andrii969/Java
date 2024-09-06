@@ -4,8 +4,8 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Team<FootballPlayer> teamA = new Team<>("Team A");
-        Team<FootballPlayer> teamB = new Team<>("Team B");
+        Team<FootballPlayer, Affiliation> teamA = new Team<>("Team A");
+        Team<FootballPlayer, Affiliation> teamB = new Team<>("Team B");
         scoreResult(teamA, 3, teamB, 5);
 
         var harpen = new FootballPlayer("B Harpen", "Right Fielder");
@@ -14,9 +14,35 @@ public class Main {
 
         teamA.addTeamMember(harpen);
         teamA.addTeamMember(marlo);
-//        teamA.addTeamMember(gunter); // can't add BaseballPlayer to the Team<FootballPlayer>
+//        teamA.addTeamMember(gunter); // can't add BaseballPlayer to the Team<FootballPlayer, Affiliation>
         teamA.listTeamMembers();
         System.out.println("-".repeat(30));
+
+        // // // // // // // // // // // // // // // // // // // // //
+
+        Team<VolleyballPlayer, Affiliation> volleyballTeamA = new Team<>("Team A");
+        volleyballTeamA.addTeamMember(new VolleyballPlayer("N Roberts", "Setter"));
+        Team<VolleyballPlayer, Affiliation> volleyballTeamB = new Team<>("Team B");
+        volleyballTeamB.addTeamMember(new VolleyballPlayer("N Sting", "Setter"));
+        scoreResult(volleyballTeamA, 3, volleyballTeamB, 5);
+        volleyballTeamA.listTeamMembers();
+        System.out.println("-".repeat(30));
+
+        // // // // // // // // // // // // // // // // // // // // //
+
+        Team<VolleyballPlayer, Affiliation> volleyballTeamC = new Team<>("Team A",
+                new Affiliation("city", "New York", "US"));
+        volleyballTeamC.addTeamMember(new VolleyballPlayer("N Roberts", "Setter"));
+        volleyballTeamC.listTeamMembers();
+
+        // // // // // // // // // // // // // // // // // // // // //
+
+        Team<VolleyballPlayer, String> volleyballTeamD = new Team<>("Team A","Some Affiliation");
+        volleyballTeamD.addTeamMember(new VolleyballPlayer("N Roberts", "Setter"));
+        volleyballTeamD.listTeamMembers();
+
+
+
     }
 
     public static void scoreResult(Team team1, int t1_score, // the overloaded method
