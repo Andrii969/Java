@@ -10,8 +10,4 @@ public interface Mappable {
         double lng = Double.parseDouble(splits[1]);
         return new double[]{lat, lng};
     }
-
-
-
-
 }

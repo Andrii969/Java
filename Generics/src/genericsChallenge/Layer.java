@@ -21,7 +21,7 @@ public class Layer<T extends Mappable> { // I need to do is make this generic, s
 
     public void renderLayer() {
         for (T element : layerElements) {
-            element.render();
+            element.render(); // using Point's (Park) and Line's (River) render() methods
         }
     }
 }

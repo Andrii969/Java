@@ -4,6 +4,10 @@ public class Main {
 
     public static void main(String[] args) {
 
+        Park park = new Park("Yellowstone", "44.4882, -110.5916");
+        park.render();
+        System.out.println("-".repeat(30));
+
         var nationalUSParks = new Park[]{
                 new Park("Yellowstone", "44.4882, -110.5916"),
                 new Park("Grand Canyon", "36.2885, -102.03657"),
