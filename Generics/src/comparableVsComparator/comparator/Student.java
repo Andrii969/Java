@@ -7,7 +7,7 @@ public class Student implements Comparable<Student> {
     private static int LAST_ID = 1000;
     private static Random random = new Random();
 
-    private String name;
+    String name; // package private
     private int id;
     protected double gpa;
 

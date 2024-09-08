@@ -1,6 +1,7 @@
 package comparableVsComparator.comparator;
 
 import java.util.Arrays;
+import java.util.Comparator;
 
 public class Main {
 
@@ -15,5 +16,15 @@ public class Main {
 
         System.out.println("result = " + tim.compareTo(new Student("TIM"))); // result = -1
                                 // (because the first tim's id is always less than the new Tim's id)
+
+        Comparator<Student> gpaSorter = new StudentGPAComparator();
+        Arrays.sort(students, gpaSorter);
+        System.out.println(Arrays.toString(students));
+
+        Arrays.sort(students, gpaSorter.reversed());
+        System.out.println(Arrays.toString(students));
+
+
+
     }
 }
