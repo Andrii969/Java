@@ -10,3 +10,7 @@ public class StudentGPAComparator implements Comparator<Student> {
         return (s1.gpa + s1.name).compareTo(s2.gpa + s2.name);
     }
 }
+
+// In Java, a Comparator is used to define an ordering of objects that don't have a natural ordering
+// or to define an alternative ordering for objects that do. Here is a class StudentGPAComparator
+// that implements the Comparator<Student> interface and provides a custom implementation of the compare method.
