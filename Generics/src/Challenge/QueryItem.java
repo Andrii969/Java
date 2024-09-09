@@ -2,5 +2,5 @@ package Challenge;
 
 public interface QueryItem {
 
-    public boolean matchFieldValue(String fieldName, String value);
+    boolean matchFieldValue(String fieldName, String value); // public by default
 }

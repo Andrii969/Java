@@ -1,6 +1,6 @@
 package Challenge;
 
-public class LPAStudent extends Student {
+public class LPAStudent extends Student{
 
     private double percentComplete;
 
@@ -15,5 +15,17 @@ public class LPAStudent extends Student {
 
     public double getPercentComplete() {
         return percentComplete;
+    }
+
+    @Override
+    public boolean matchFieldValue(String fieldName, String value) {
+        String fName = fieldName.toUpperCase();
+        return switch(fName) {
+            case "NAME" -> super.matchFieldValue(fieldName, value);
+            case "COURSE" -> super.matchFieldValue(fieldName, value);
+            case "YEARSTARTED" -> super.matchFieldValue(fieldName, value);
+            case "PERCENTCOMPLETE" -> percentComplete <= Double.parseDouble(value);
+            default -> false;
+        };
     }
 }

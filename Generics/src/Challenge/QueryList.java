@@ -3,12 +3,18 @@ package Challenge;
 import java.util.ArrayList;
 import java.util.List;
 
-public class QueryList <T extends Student & QueryItem> {
+public class QueryList <T extends Student & QueryItem> extends ArrayList<T>{
+    // extends ArrayList - means I won't have to manage all the elements -> the ArrayList's functionality will handle all of that
 
-    private List<T> items;
+//    private List<T> items;
+
+    public QueryList() { // WHY DO WE NEED IT ???
+
+    }
 
     public QueryList(List<T> items) {
-        this.items = items;
+        super(items); // passing items as its arguments (instead of assigning the argument to items)
+//        this.items = items;
     }
 
     public static <S extends QueryItem> List<S> getMatches(List<S> items, String field, String value) {
@@ -21,10 +27,10 @@ public class QueryList <T extends Student & QueryItem> {
         return matches;
     }
 
-    public List<T> getMatches(String field, String value) {
+    public QueryList<T> getMatches(String field, String value) {
 
-        List<T> matches = new ArrayList<>();
-        for (var item : items) {
+        QueryList<T> matches = new QueryList<>();
+        for (var item : this) {
             if (item.matchFieldValue(field, value)) {
                 matches.add(item);
             }

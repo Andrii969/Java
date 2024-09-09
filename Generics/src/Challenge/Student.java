@@ -2,8 +2,11 @@ package Challenge;
 
 import java.util.Random;
 
-public class Student implements QueryItem {
+public class Student implements QueryItem, Comparable<Student> {
 
+    private static int LAST_ID = 1000;
+
+    private int id;
     private String name;
     private String course;
     private int yearStarted;
@@ -18,11 +21,12 @@ public class Student implements QueryItem {
         name = firstNames[random.nextInt(5)] + " " + (char) lastNameIndex;
         course = courses[random.nextInt(3)];
         yearStarted = random.nextInt(2018, 2023);
+        id = LAST_ID++;
     }
 
     @Override
     public String toString() {
-        return "%-15s %-15s %d".formatted(name, course, yearStarted);
+        return "%d %-15s %-15s %d".formatted(id, name, course, yearStarted);
     }
 
     public int getYearStarted() {
@@ -39,6 +43,11 @@ public class Student implements QueryItem {
             case "YEARSTARTED" -> yearStarted == (Integer.parseInt(value));
             default -> false;
         };
+    }
+
+    @Override
+    public int compareTo(Student o) {
+        return Integer.valueOf(id).compareTo(Integer.valueOf(o.id));
     }
 }
 
