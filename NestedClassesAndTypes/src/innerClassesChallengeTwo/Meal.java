@@ -43,6 +43,11 @@ public class Meal {
         return "%s%n%s%n%s%n%27s%.2f".formatted(burger, drink, side, "Total Due $", getTotal());
     }
 
+    public void addToppings(String... selectedToppings) {
+        burger.addToppings(selectedToppings);
+        // The Meal class is able to call a private method on the burger class.
+    }
+
     public class Item {
 
         private String name;
@@ -71,25 +76,57 @@ public class Meal {
 
     private class Burger extends Item{
 
-        private enum Extra {AVOCADO, BACON, CHEESE, KETCHUP, MAYO, MUSTARD, PICKLES};
+        private enum Extra {AVOCADO, BACON, CHEESE, KETCHUP, MAYO, MUSTARD, PICKLES;
+
+            private double getPrice() {
+                return switch (this) {
+                    case AVOCADO -> 1.0;
+                    case BACON, CHEESE -> 1.5;
+                    default -> 0;
+                };
+            }
+
+            // Notice I'm switching on the keyword, "this". When the getPrice method gets called,
+            // it will be called from an instance of one of these extra constants, so I can use this as my switch expression.
+
+        };
 
         private List<Item> toppings = new ArrayList<>();
 
         Burger(String name) {
-            super(name, "burger", price);
+            super(name, "burger");
         }
 
         public double getPrice() {
-            return super.price;
+            double burgerPriceWithToppings = super.price;
+            for (Item topping : toppings) {
+                burgerPriceWithToppings += topping.price;
+            }
+            return burgerPriceWithToppings;
         }
 
-        private void getToppings(String... selectedToppings) {
+        private void addToppings(String... selectedToppings) {
             for (String selectedTopping : selectedToppings) {
-                Extra topping = Extra.valueOf(selectedTopping.toUpperCase());
-                toppings.add(new Item(topping.name(), "TOPPING", 0));
+                try {
+                    Extra topping = Extra.valueOf(selectedTopping.toUpperCase());
+                    toppings.add(new Item(topping.name(), "TOPPING", topping.getPrice()));
+                } catch (IllegalArgumentException iae) {
+                    System.out.println("No topping found for " + selectedTopping);
+                }
+                // Why can I access a private method on the enum from this code? Again,
+                // this has to do with the special nature of inner types. Private attributes and methods are available
+                // to the enclosing class, and this is true for inner types like enums and records, as well as inner classes.
+                // I want to invoke this from a method on my Meal class, and just use the same signature.
             }
         }
 
-
+        @Override
+        public String toString() {
+            StringBuilder burgerDetails = new StringBuilder(super.toString());
+            for (Item topping : toppings) {
+                burgerDetails.append("\n").append(topping);
+            }
+            return burgerDetails.toString();
+        }
     }
 }

@@ -8,6 +8,7 @@ public class Store {
         System.out.println(regularMeal);
 
         Meal USRegularMeal = new Meal(0.68);
+        USRegularMeal.addToppings("CHEESE", "Bacon", "Mayo", "Cheddar");
         System.out.println(USRegularMeal);
     }
 }
