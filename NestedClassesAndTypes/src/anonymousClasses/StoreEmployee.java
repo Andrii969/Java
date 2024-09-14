@@ -1,4 +1,4 @@
-package localClasses;
+package anonymousClasses;
 
 import java.util.Comparator;
 
@@ -27,7 +27,7 @@ public class StoreEmployee extends Employee {
 
             int result = o1.store.compareTo(o2.store);
             if (result == 0) {
-                return new Employee.EmployeeComparator<>(
+                return new EmployeeComparator<>(
                         "yearStarted").compare(o1, o2);
             }
 

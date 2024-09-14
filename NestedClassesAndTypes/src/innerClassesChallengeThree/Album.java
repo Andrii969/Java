@@ -63,7 +63,7 @@ public class Album {
             if (songs.contains(song)) {
                 return false;
             }
-            for (Song s : songs) {
+            for (Song s : songs) { // duplicated code, the findSong == null could be used here
                 if (s.getTitle().equalsIgnoreCase(song.getTitle())) {
                     return false;
                 }

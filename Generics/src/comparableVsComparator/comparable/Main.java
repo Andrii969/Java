@@ -1,6 +1,9 @@
 package comparableVsComparator.comparable;
 
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Comparator;
+import java.util.List;
 
 public class Main {
 
@@ -39,6 +42,9 @@ public class Main {
         Student tim = new Student("Tim");
         Student marry = new Student("Marry");
         Student[] students = {new Student("Zach"),new Student("Tim"), new Student("Ann")};
+
+        List<Student> list = new ArrayList<>(List.of(students));
+        list.sort(Comparator.naturalOrder());
 
         Arrays.sort(students); // class should implement Comparable,
                                 // otherwise ERROR: class revisitingComparable.Student cannot be cast to class java.lang.Comparable

@@ -1,11 +1,11 @@
-package localClasses;
+package anonymousClasses;
 
 import java.util.Comparator;
 
 public class Employee {
 
-    public static class EmployeeComparator <T extends Employee> // NOTE: It's Generic
-            implements Comparator<Employee> {
+    public static class EmployeeComparator <T extends Employee>
+            implements Comparator<Employee> { // NOTE: It's Generic
 
         private String sortType;
 
@@ -44,6 +44,10 @@ public class Employee {
 
     public String getName() {
         return name;
+    }
+
+    public int getEmployeeId() {
+        return employeeId;
     }
 
     @Override

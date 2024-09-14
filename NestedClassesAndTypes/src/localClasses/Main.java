@@ -47,7 +47,7 @@ public class Main {
         }
 
         System.out.println("With Pig Latin Names");
-         addPigLatinName(storeEmployees);
+        addPigLatinName(storeEmployees);
     }
 
     public static void addPigLatinName(List<? extends StoreEmployee> list) {
@@ -65,6 +65,9 @@ public class Main {
             private String pigLatinName;
             private Employee originalInstance;
 
+            public DecoratedEmployee() {
+            }
+
             public DecoratedEmployee(String pigLatinname, Employee originalinstance) {
                 this.pigLatinName = pigLatinname + " " + lastName;
                 this.originalInstance = originalinstance;
@@ -81,19 +84,19 @@ public class Main {
             }
         }
 
-            List<DecoratedEmployee> newList = new ArrayList<>(list.size());
-            for (var employee : list) {
-                String name = employee.getName();
-                String pigLatin = name.substring(1) + name.charAt(0) + "ay";
-                newList.add(new DecoratedEmployee(pigLatin, employee));
-            }
+        List<DecoratedEmployee> newList = new ArrayList<>(list.size());
+        for (var employee : list) {
+            String name = employee.getName();
+            String pigLatin = name.substring(1) + name.charAt(0) + "ay";
+            newList.add(new DecoratedEmployee(pigLatin, employee));
+        }
 
-            newList.sort(Comparator.reverseOrder()); // NOTE: I could use 'null' instead of Comparator.reverseOrder()
-            // sorting by the pigLatinname
-            for (var dEmployee : newList) {
-                System.out.println(dEmployee);
-                System.out.println(dEmployee.originalInstance.getName() + " / " + dEmployee.pigLatinName);
-            }
+        newList.sort(Comparator.naturalOrder()); // NOTE: I could use 'null' instead of Comparator.reverseOrder()
+        // sorting by the pigLatinname
+        for (var dEmployee : newList) {
+            System.out.println(dEmployee);
+            System.out.println(dEmployee.originalInstance.getName() + " / " + dEmployee.pigLatinName);
+        }
     }
 
 }
