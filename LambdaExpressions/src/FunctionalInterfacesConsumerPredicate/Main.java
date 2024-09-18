@@ -54,6 +54,8 @@ public class Main {
             System.out.printf("[lan:%.3f, lng:%.3f]%n", lan, lng);
         };
 
+        consumer.accept(2323.1, 2323.2);
+
         var firstPoint = coords.get(0);
         processPoint(firstPoint[0], firstPoint[1], consumer);
 
