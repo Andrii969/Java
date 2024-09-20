@@ -12,7 +12,7 @@ public class ChallengeTwo {
 
         // // // // // // // // // // // //
 
-        Consumer<String> printEverySecondChar = (string) -> {
+        Consumer<String> printEverySecondChar = (string) -> { // VOID
             StringBuilder returnVal = new StringBuilder();
             for (int i = 0; i < string.length(); i++) {
                 if (i % 2 == 1) {
@@ -27,7 +27,7 @@ public class ChallengeTwo {
 
         // // // // // // // // // // // //
 
-        Function<String, String> everySecondChar = (sentence) -> {
+        Function<String, String> everySecondChar = (sentence) -> { // RETURN
             StringBuilder returnVal = new StringBuilder();
             for (int i = 0; i < sentence.length(); i++) {
                 if (i % 2 == 1) {
@@ -42,7 +42,7 @@ public class ChallengeTwo {
 
         // // // // // // // // // // // //
 
-        UnaryOperator<String> everySecondChar2 = (sentence) -> {
+        UnaryOperator<String> everySecondChar2 = (sentence) -> { // RETURN
             StringBuilder returnVal = new StringBuilder();
             for (int i = 0; i < sentence.length(); i++) {
                 if (i % 2 == 1) {

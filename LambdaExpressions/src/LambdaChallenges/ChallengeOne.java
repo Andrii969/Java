@@ -7,7 +7,7 @@ public class ChallengeOne {
 
     public static void main(String[] args) {
 
-        Consumer<String> printWords1 = new Consumer<String>() {
+        Consumer<String> printWords1 = new Consumer<String>() { // VOID
             @Override
             public void accept(String s) {
                 String[] parts = s.split(" ");
@@ -22,7 +22,7 @@ public class ChallengeOne {
 
         // // // // // // // // // // // // // // //
 
-        Consumer<String> printWords2 = (sentence) -> {
+        Consumer<String> printWords2 = (sentence) -> { // VOID
             String[] words = sentence.split(" ");
             for (String word : words) {
                 System.out.println(word);
@@ -34,7 +34,7 @@ public class ChallengeOne {
 
         // // // // // // // // // // // // // // //
 
-        Consumer<String> printWords3 = (sentence) -> {
+        Consumer<String> printWords3 = (sentence) -> { // VOID
             String[] words = sentence.split(" ");
             Arrays.asList(words).forEach((w) -> System.out.println(w));
         };
@@ -44,7 +44,7 @@ public class ChallengeOne {
 
         // // // // // // // // // // // // // // //
 
-        Consumer<String> printWords4 = (sentence) -> {
+        Consumer<String> printWords4 = (sentence) -> { // VOID
             Arrays.asList(sentence.split(" ")).forEach((w) -> System.out.println(w));
         };
 
