@@ -23,11 +23,17 @@ public class Main {
         // This method is meant to fill a list with a specific element, but it requires the list to have elements already
         // in it (i.e., the list size must be greater than 0). Since the cards list is empty, Collections.fill doesn't add
         // anything. It just silently does nothing because there's nothing to fill.
+        Collections.addAll(cards, aceOfHearts);
+        Card aceOfClubs = Card.getFaceCard(Card.Suit.CLUB, 'A');
+        Collections.fill(cards, aceOfClubs);
+//        Collections.fill(cards, deck); // ERROR HERE
+// The Collections.fill() method in Java can only accept one item to fill a list, not a list or array.
+// This method works by replacing every element of the specified list with the single object provided as the second parameter.
         System.out.println(cards); // []
         System.out.println("cards.size() = " + cards.size()); // cards.size() = 0
 
         List<Card> acesOfHearts = Collections.nCopies(13, aceOfHearts);
-        Card.printDesk(acesOfHearts, "Aces of Hearts", 1);
+        Card.printDesk(acesOfHearts, "nCopies Aces of Hearts", 1);
 
         Card kingOfClubs = Card.getFaceCard(Card.Suit.CLUB, 'K');
         List<Card> kingsOfClubs = Collections.nCopies(13, kingOfClubs);
