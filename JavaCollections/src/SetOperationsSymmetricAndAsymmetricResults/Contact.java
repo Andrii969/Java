@@ -1,4 +1,4 @@
-package IntroductionToSetsAndHashSet;
+package SetOperationsSymmetricAndAsymmetricResults;
 
 import java.util.HashSet;
 import java.util.Objects;

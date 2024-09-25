@@ -18,17 +18,20 @@ public class Main {
         Set<Contact> phoneContacts = new HashSet<>(phones);
         printData("Phone contacts", phoneContacts);
         printData("Email contacts", emailContacts);
-        //   You can see that there are still duplicates in both of these sets,
-        // but the order is not the same as the order that was in the list.
-        // Can you guess why there's duplicates in these Sets, even though I just said on the slides,
-        // that HashSets won't have duplicates? Well, duplicates are determined, for hashed collections,
-        // first by the hash code, and then the equals method.
-        //   In this instance, both the hash code method, and the equals method, are using Object's implementation.
-        // This means each of these instances of contacts is considered unique, by that definition.
-        // In most cases, this is probably a good thing. But since these are personal contacts, I'm going to make a rule,
-        // that contacts that have the same name, are really the same person, but with different data.
+        // Since both 'emailContacts' and 'phoneContacts' are stored in a HashSet, duplicates will not be printed.
+        // This is because HashSet does not allow duplicate elements and relies on the Contact class's overridden
+        // 'equals()' and 'hashCode()' methods to determine uniqueness. If two Contact objects have the same name,
+        // emails, and phone numbers, they will be considered equal and only one of them will be stored in the set.
+        // Thus, when adding phones and emails into the Set<Contact>, duplicates are automatically filtered out,
+        // and you won't see them printed.
 
-
+        int index = emails.indexOf(new Contact("Robin Hood"));
+        Contact robinHood = emails.get(index);
+        robinHood.addEmail("Sherwood Forest");
+        robinHood.addEmail("Sherwood Forest");
+        robinHood.replaceEmailIfExists("RHood@sherwoodforest.com", "RHood@sherwoodforest.org");
+        System.out.println(robinHood);
+        printData("Email contacts updated", emailContacts);
     }
 
     public static void printData(String header, Collection<Contact> contacts) {
