@@ -41,6 +41,8 @@ public class Main {
         System.out.println(collectionList);
         System.out.println("Gary is in the collectionList? " + collectionList.contains("Gary"));
 
+//        Collections.sort(collectionList); // ERROR. I can't sort a collection
+
 //        collectionList.sort(); // Cannot resolve method 'sort' in 'Collection'
 
     }
