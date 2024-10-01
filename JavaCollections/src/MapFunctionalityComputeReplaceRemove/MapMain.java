@@ -98,5 +98,9 @@ public class MapMain {
             System.out.printf("Did not match on both key: %s and value: %s %n", "Daisy Duck", daisy);
         }
         contacts.forEach((k, v) -> System.out.println("key = " + k + " value = " + v));
+
+        System.out.println("-".repeat(30));
+        Contact contactA = contacts.get("Daisy Duck");
+        System.out.println(contactA);
     }
 }

@@ -27,6 +27,5 @@ public class Bird extends Animal implements FlightEnabled, Trackable {
     @Override // abstract method from Trackable interface
     public void track() {
         System.out.println(getClass().getSimpleName() + "'s coordinates recorded!");
-
     }
 }

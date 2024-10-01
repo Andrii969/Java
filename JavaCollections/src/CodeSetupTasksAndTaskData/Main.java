@@ -16,7 +16,6 @@ public class Main {
         // = ((o1, o2) -> o1.getPriority().compareTo(o2.getPriority()));
 
         sortAndPrint("Ann's tasks Sorted By Priority", annsTasks, sortByPriority);
-
     }
 
     private static void sortAndPrint(String header, Collection<Task> collection) {
