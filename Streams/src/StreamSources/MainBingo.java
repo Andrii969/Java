@@ -29,9 +29,11 @@ public class MainBingo {
         myMap.forEach((k, v) -> System.out.println(k + ": " + Arrays.toString(v)));
 
         myMap.entrySet()// entrySet() returns a Set of key-value pairs (entries) from the map (Set<Map.Entry<Character, int[]>>)
+                        // but, if you're just printing the keys, keySet() is enough
                 .stream()
                 .map(e -> e.getKey() + " has range: " + e.getValue()[0] + " - " + e.getValue()[e.getValue().length - 1])
                 .forEach(System.out::println);
-        
+
+
     }
 }

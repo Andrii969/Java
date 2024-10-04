@@ -2,6 +2,8 @@ package StreamSources;
 
 import java.util.Arrays;
 import java.util.Comparator;
+import java.util.Random;
+import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
 public class Main {
@@ -42,6 +44,53 @@ public class Main {
                 .forEach(System.out::println);
 
 
+        // // // // // // // // // // // // // // // // //
+        System.out.println("-".repeat(30));
+        Random random = new Random();
+        Stream.generate(() -> random.nextInt(2))
+                .limit(10)
+                .forEach((s) -> System.out.print(s + " "));
 
+        System.out.println();
+        System.out.println("-".repeat(30));
+        IntStream.iterate(1, n -> n + 1) // IntStream simply because dealing with integers
+                                                // seed it's a starting value, after that is Unary Operator
+                .filter(Main::isPrime) // or .filter(n -> isPrime(n))
+                .limit(20)
+                .forEach(n -> System.out.print(n + " "));
+
+        System.out.println();
+        System.out.println("-".repeat(30));
+        IntStream.iterate(1, n -> n + 1)
+                .limit(100)
+                .filter(Main::isPrime)
+                .forEach(n -> System.out.print(n + " "));
+
+        System.out.println();
+        System.out.println("-".repeat(30));
+        IntStream.iterate(1, n -> n <= 100, n -> n + 1) // iterate(int seed, IntPredicate hasNext, IntUnaryOperator next)
+                .filter(Main::isPrime)
+                .forEach(n -> System.out.print(n + " "));
+
+        System.out.println();
+        System.out.println("-".repeat(30));
+        IntStream.range(1, 100) // I'll replace iterate with range, which takes a starting and ending value,
+                                // and automatically increments by one
+                                // Note: range doesn't include the ending value, rangeClosed includes ending value
+                .filter(Main::isPrime)
+                .forEach(n -> System.out.print(n + " "));
+
+    }
+
+    public static boolean isPrime (int wholeNumber) {
+        if (wholeNumber <= 2) {
+            return (wholeNumber == 2);
+        }
+        for (int divisor = 2; divisor < wholeNumber; divisor++) {
+            if (wholeNumber % divisor == 0) {
+                return false;
+            }
+        }
+        return true;
     }
 }
