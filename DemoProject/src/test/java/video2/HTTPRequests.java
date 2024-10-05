@@ -12,7 +12,7 @@ import static org.hamcrest.Matchers.equalTo;
 
 public class HTTPRequests {
 
-    String id = "ec07";
+    String id;
 
     // Ways to create POST requests
 
