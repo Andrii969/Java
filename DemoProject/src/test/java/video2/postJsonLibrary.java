@@ -1,43 +1,45 @@
 package video2;
 
 import io.restassured.response.Response;
+import org.json.JSONObject;
 import org.testng.annotations.Test;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
 
-import static io.restassured.RestAssured.*;
+import static io.restassured.RestAssured.given;
+import static io.restassured.RestAssured.when;
 import static org.hamcrest.Matchers.equalTo;
+import static org.hamcrest.Matchers.hasItems;
 
-public class HTTPRequests {
 
-    String id;
+public class postJsonLibrary {
 
-    // Ways to create POST requests
+    private String id;
 
     @Test(priority = 1)
-    void testPostUsingHashMap() {
-        HashMap<String, Object> data = new HashMap<>();
+    void testPostUsingJsonObject() { // post using org.json.library
+
+        JSONObject data = new JSONObject();
         data.put("name","Scotty");
         data.put("location", "France");
         data.put("phone", "89783463543");
         data.put("courses", new ArrayList<>(List.of("C++", "RestAPI")));
-//        String[] courseArr = {"C++", "RestAPI"}; // Alternatively to the 16th row
-//        data.put("courses", courseArr); // Alternatively to the 16th row
+//        String[] courseArr = {"C++", "RestAPI"}; // Alternatively to the 27th row
+//        data.put("courses", courseArr); // Alternatively to the 27th row
 
         Response response = given()
                 .contentType("application/json")
-                .body(data)
-        .when()
-                .post("http://localhost:3000/students");
+                .body(data.toString()) // convert data to string
+                    .when()
+                        .post("http://localhost:3000/students");
 
         response.then()
                 .statusCode(201)
-                .body("name",equalTo("Scotty"))
+                .body("name",equalTo("Scotty")) // JSON path name doesn't match.
                 .body("location",equalTo("France"))
                 .body("phone",equalTo("89783463543"))
-                .body("courses", equalTo(data.get("courses")))
+                .body("courses", hasItems("C++", "RestAPI"))
                 .body("courses[0]", equalTo("C++"))
                 .body("courses[1]", equalTo("RestAPI"))
                 .header("Content-Type","application/json")
@@ -51,9 +53,9 @@ public class HTTPRequests {
     void testDeleteCreatedStudent() {
 
         when()
-            .delete("http://localhost:3000/students/" + id)
-        .then()
-            .statusCode(200);
+                .delete("http://localhost:3000/students/" + id)
+                .then()
+                .statusCode(200);
     }
 
 

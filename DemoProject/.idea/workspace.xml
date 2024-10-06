@@ -5,8 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="31fa4849-edbd-4d23-a715-8624f77b651d" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/video2/HTTPRequests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/video2/postHashMap.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,6 +37,10 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "TestNG.CookiesDemo.executor": "Run",
+    "TestNG.CookiesDemo.getCookiesInfo.executor": "Run",
+    "TestNG.CookiesDemo.testCookies.executor": "Run",
     "TestNG.HTTPRequests (1).executor": "Run",
     "TestNG.HTTPRequests.createUser.executor": "Run",
     "TestNG.HTTPRequests.executor": "Run",
@@ -43,6 +48,21 @@
     "TestNG.HTTPRequests.getUsers.executor": "Run",
     "TestNG.HTTPRequests.testDeleteCreatedStudent.executor": "Run",
     "TestNG.HTTPRequests.testPostUsingHashMap.executor": "Run",
+    "TestNG.HeadersDemo.executor": "Run",
+    "TestNG.LoggingDemo.testQueryAndPathParameters.executor": "Run",
+    "TestNG.ParsingJsonResponse.executor": "Run",
+    "TestNG.ParsingJsonResponse.testJsonResponse.executor": "Run",
+    "TestNG.ParsingJsonResponse.testJsonResponse1.executor": "Run",
+    "TestNG.ParsingJsonResponse.testJsonResponse2.executor": "Run",
+    "TestNG.PathAndQueryParameters.testQueryAndPathParameters.executor": "Run",
+    "TestNG.PostHashMap.executor": "Run",
+    "TestNG.postHashMap.executor": "Run",
+    "TestNG.postJsonLibrary.executor": "Run",
+    "TestNG.postJsonLibrary.testPostUsingJsonObject.executor": "Run",
+    "TestNG.postUsingExternalJsonFile.executor": "Run",
+    "TestNG.postUsingExternalJsonFile.testUsingExternalJsonFile.executor": "Run",
+    "TestNG.postUsingPojoClass.executor": "Run",
+    "TestNG.postUsingPojoClass.testPostUsingPOJO.executor": "Run",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
     "settings.editor.selected.configurable": "editor.preferences.completion"
@@ -52,18 +72,21 @@
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/test/java" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="video2" />
+    </key>
   </component>
-  <component name="RunManager" selected="TestNG.HTTPRequests.testDeleteCreatedStudent">
-    <configuration name="HTTPRequests (1)" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.ParsingJsonResponse.testJsonResponse2">
+    <configuration name="ParsingJsonResponse" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="DemoProject" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="video2.*" />
+          <option name="PATTERN" value="video4.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="video2" />
-      <option name="MAIN_CLASS_NAME" value="video2.HTTPRequests" />
+      <option name="PACKAGE_NAME" value="video4" />
+      <option name="MAIN_CLASS_NAME" value="video4.ParsingJsonResponse" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -71,17 +94,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HTTPRequests.createUser" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="ParsingJsonResponse.testJsonResponse" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="DemoProject" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="video1.*" />
+          <option name="PATTERN" value="video4.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="video1" />
-      <option name="MAIN_CLASS_NAME" value="video1.HTTPRequests" />
-      <option name="METHOD_NAME" value="createUser" />
+      <option name="PACKAGE_NAME" value="video4" />
+      <option name="MAIN_CLASS_NAME" value="video4.ParsingJsonResponse" />
+      <option name="METHOD_NAME" value="testJsonResponse" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -89,17 +112,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HTTPRequests.getCreatedUser" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="ParsingJsonResponse.testJsonResponse1" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="DemoProject" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="video1.*" />
+          <option name="PATTERN" value="video4.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="video1" />
-      <option name="MAIN_CLASS_NAME" value="video1.HTTPRequests" />
-      <option name="METHOD_NAME" value="getCreatedUser" />
+      <option name="PACKAGE_NAME" value="video4" />
+      <option name="MAIN_CLASS_NAME" value="video4.ParsingJsonResponse" />
+      <option name="METHOD_NAME" value="testJsonResponse1" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -107,7 +130,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HTTPRequests.testDeleteCreatedStudent" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="ParsingJsonResponse.testJsonResponse2" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="DemoProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="video4.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="video4" />
+      <option name="MAIN_CLASS_NAME" value="video4.ParsingJsonResponse" />
+      <option name="METHOD_NAME" value="testJsonResponse2" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="postHashMap" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="DemoProject" />
       <extension name="coverage">
         <pattern>
@@ -116,27 +157,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="video2" />
-      <option name="MAIN_CLASS_NAME" value="video2.HTTPRequests" />
-      <option name="METHOD_NAME" value="testDeleteCreatedStudent" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="HTTPRequests.testPostUsingHashMap" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="DemoProject" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="video2.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="video2" />
-      <option name="MAIN_CLASS_NAME" value="video2.HTTPRequests" />
-      <option name="METHOD_NAME" value="testPostUsingHashMap" />
-      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="MAIN_CLASS_NAME" value="video2.postHashMap" />
+      <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
       <method v="2">
@@ -145,11 +167,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.HTTPRequests.testDeleteCreatedStudent" />
-        <item itemvalue="TestNG.HTTPRequests (1)" />
-        <item itemvalue="TestNG.HTTPRequests.testPostUsingHashMap" />
-        <item itemvalue="TestNG.HTTPRequests.getCreatedUser" />
-        <item itemvalue="TestNG.HTTPRequests.createUser" />
+        <item itemvalue="TestNG.ParsingJsonResponse.testJsonResponse2" />
+        <item itemvalue="TestNG.ParsingJsonResponse" />
+        <item itemvalue="TestNG.ParsingJsonResponse.testJsonResponse1" />
+        <item itemvalue="TestNG.postHashMap" />
+        <item itemvalue="TestNG.ParsingJsonResponse.testJsonResponse" />
       </list>
     </recent_temporary>
   </component>
