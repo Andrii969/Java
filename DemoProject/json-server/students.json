@@ -29,6 +29,16 @@
         "C++",
         "Selenium"
       ]
+    },
+    {
+      "id": "cae0",
+      "courses": [
+        "C++",
+        "RestAPI"
+      ],
+      "phone": "89783463543",
+      "name": "Scotty",
+      "location": "France"
     }
   ]
 }

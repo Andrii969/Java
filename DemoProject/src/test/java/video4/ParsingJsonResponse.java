@@ -51,6 +51,8 @@ public class ParsingJsonResponse {
 
         boolean status = false;
 
+//        JSONObject jsonObject = new JSONObject(response.toString()); // not applicable for my API
+//        JSONArray jsonArray = jsonObject.getJSONArray("students");
         for (int i = 0; i < jsonArray.length(); i++) {
             JSONObject object = jsonArray.getJSONObject(i); // Cast to JSONObject
             String studentName = object.getString("name"); // Use getString() to retrieve the name
@@ -62,9 +64,6 @@ public class ParsingJsonResponse {
         }
         Assert.assertTrue(status);
 //        Assert.assertEquals(status,true); // it's also correct
-
-
-
 
 
         // checking the order of Ids

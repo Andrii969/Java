@@ -28,7 +28,7 @@ public class postHashMap {
 
         Response response = given()
                 .contentType("application/json")
-                .body(data)
+                .body(data) // automatically converted to JSON because of contentType
         .when()
                 .post("http://localhost:3000/students");
 

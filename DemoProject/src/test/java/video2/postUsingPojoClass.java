@@ -25,7 +25,7 @@ public class postUsingPojoClass {
 
         Response response = given()
                 .contentType("application/json")
-                .body(data) // convert data to string
+                .body(data) // REST Assured automatically serializes POJO to JSON
                 .when()
                 .post("http://localhost:3000/students");
 

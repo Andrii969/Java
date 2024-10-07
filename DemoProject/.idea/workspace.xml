@@ -5,9 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="31fa4849-edbd-4d23-a715-8624f77b651d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/video2/HTTPRequests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/video2/postHashMap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/json-server/students.json" beforeDir="false" afterPath="$PROJECT_DIR$/json-server/students.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/video2/postHashMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/video2/postHashMap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/video2/postUsingPojoClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/video2/postUsingPojoClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/video4/ParsingJsonResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/video4/ParsingJsonResponse.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,9 +29,9 @@
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 6
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
   <component name="ProjectId" id="2n0rghkAAbxQc7wsVMduWFPS1K8" />
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
@@ -49,6 +51,8 @@
     "TestNG.HTTPRequests.testDeleteCreatedStudent.executor": "Run",
     "TestNG.HTTPRequests.testPostUsingHashMap.executor": "Run",
     "TestNG.HeadersDemo.executor": "Run",
+    "TestNG.JSONSchemaValidation.executor": "Run",
+    "TestNG.JSONSchemaValidation.jsonSchemaValidation.executor": "Run",
     "TestNG.LoggingDemo.testQueryAndPathParameters.executor": "Run",
     "TestNG.ParsingJsonResponse.executor": "Run",
     "TestNG.ParsingJsonResponse.testJsonResponse.executor": "Run",
@@ -56,7 +60,10 @@
     "TestNG.ParsingJsonResponse.testJsonResponse2.executor": "Run",
     "TestNG.PathAndQueryParameters.testQueryAndPathParameters.executor": "Run",
     "TestNG.PostHashMap.executor": "Run",
+    "TestNG.SerializationDeserialization.convertPojoToJson.executor": "Run",
+    "TestNG.SerializationDeserialization.executor": "Run",
     "TestNG.postHashMap.executor": "Run",
+    "TestNG.postHashMap.testPostUsingHashMap.executor": "Run",
     "TestNG.postJsonLibrary.executor": "Run",
     "TestNG.postJsonLibrary.testPostUsingJsonObject.executor": "Run",
     "TestNG.postUsingExternalJsonFile.executor": "Run",
@@ -73,20 +80,21 @@
       <recent name="$PROJECT_DIR$/src/test/java" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="video6" />
       <recent name="video2" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.ParsingJsonResponse.testJsonResponse2">
-    <configuration name="ParsingJsonResponse" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.postUsingPojoClass">
+    <configuration name="JSONSchemaValidation" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="DemoProject" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="video4.*" />
+          <option name="PATTERN" value="video6.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="video4" />
-      <option name="MAIN_CLASS_NAME" value="video4.ParsingJsonResponse" />
+      <option name="PACKAGE_NAME" value="video6" />
+      <option name="MAIN_CLASS_NAME" value="video6.JSONSchemaValidation" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -94,17 +102,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ParsingJsonResponse.testJsonResponse" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="JSONSchemaValidation.jsonSchemaValidation" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="DemoProject" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="video4.*" />
+          <option name="PATTERN" value="video6.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="video4" />
-      <option name="MAIN_CLASS_NAME" value="video4.ParsingJsonResponse" />
-      <option name="METHOD_NAME" value="testJsonResponse" />
+      <option name="PACKAGE_NAME" value="video6" />
+      <option name="MAIN_CLASS_NAME" value="video6.JSONSchemaValidation" />
+      <option name="METHOD_NAME" value="jsonSchemaValidation" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -112,17 +120,34 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ParsingJsonResponse.testJsonResponse1" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="SerializationDeserialization" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="DemoProject" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="video4.*" />
+          <option name="PATTERN" value="video6.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="video4" />
-      <option name="MAIN_CLASS_NAME" value="video4.ParsingJsonResponse" />
-      <option name="METHOD_NAME" value="testJsonResponse1" />
+      <option name="PACKAGE_NAME" value="video6" />
+      <option name="MAIN_CLASS_NAME" value="video6.SerializationDeserialization" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SerializationDeserialization.convertPojoToJson" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="DemoProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="video6.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="video6" />
+      <option name="MAIN_CLASS_NAME" value="video6.SerializationDeserialization" />
+      <option name="METHOD_NAME" value="convertPojoToJson" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -130,25 +155,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ParsingJsonResponse.testJsonResponse2" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="DemoProject" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="video4.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="video4" />
-      <option name="MAIN_CLASS_NAME" value="video4.ParsingJsonResponse" />
-      <option name="METHOD_NAME" value="testJsonResponse2" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="postHashMap" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="postUsingPojoClass" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="DemoProject" />
       <extension name="coverage">
         <pattern>
@@ -157,7 +164,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="video2" />
-      <option name="MAIN_CLASS_NAME" value="video2.postHashMap" />
+      <option name="MAIN_CLASS_NAME" value="video2.postUsingPojoClass" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -167,11 +174,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.ParsingJsonResponse.testJsonResponse2" />
-        <item itemvalue="TestNG.ParsingJsonResponse" />
-        <item itemvalue="TestNG.ParsingJsonResponse.testJsonResponse1" />
-        <item itemvalue="TestNG.postHashMap" />
-        <item itemvalue="TestNG.ParsingJsonResponse.testJsonResponse" />
+        <item itemvalue="TestNG.postUsingPojoClass" />
+        <item itemvalue="TestNG.SerializationDeserialization" />
+        <item itemvalue="TestNG.SerializationDeserialization.convertPojoToJson" />
+        <item itemvalue="TestNG.JSONSchemaValidation" />
+        <item itemvalue="TestNG.JSONSchemaValidation.jsonSchemaValidation" />
       </list>
     </recent_temporary>
   </component>
@@ -185,5 +192,16 @@
       <updated>1728120947631</updated>
     </task>
     <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/video6/SerializationDeserialization.java</url>
+          <line>8</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
