@@ -9,6 +9,17 @@ public class Order {
     String status = "placed"; // hardcoded
     boolean complete = true; // hardcoded
 
+    public Order() {}
+
+    public Order(Order another) {
+        this.id = another.id;
+        this.quantity = another.quantity;
+        this.shipDate = another.shipDate;
+        this.petId = another.petId;
+        this.status = another.status;
+        this.complete = another.complete;
+    }
+
     public int getId() {
         return id;
     }
@@ -56,4 +67,5 @@ public class Order {
     public void setComplete(boolean complete) {
         this.complete = complete;
     }
+
 }

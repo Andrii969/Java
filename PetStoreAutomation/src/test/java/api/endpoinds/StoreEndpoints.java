@@ -3,6 +3,8 @@ package api.endpoinds;
 import api.payload.Order;
 import io.restassured.response.Response;
 
+import java.util.Map;
+
 import static io.restassured.RestAssured.given;
 
 public class StoreEndpoints {
@@ -24,6 +26,18 @@ public class StoreEndpoints {
                 .body(payload)
         .when()
                 .post(Routes.POST_STORE_ORDER_URL);
+
+        return response;
+    }
+
+    public static Response placeOrder(Map<String, Object> payload) {
+        Response response =
+                given()
+                        .contentType("application/json")
+                        .accept("application/json")
+                        .body(payload)
+                        .when()
+                        .post(Routes.POST_STORE_ORDER_URL);
 
         return response;
     }
