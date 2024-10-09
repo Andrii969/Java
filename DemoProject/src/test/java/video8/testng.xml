@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="/Users/andriisavonov/Projects/Java/DemoProject/src/test/java/video8">
+        <classes>
+            <class name="video8.CreateUserTest">
+        </class>
+            <class name="video8.GetUserTest">
+        </class>
+            <class name="video8.UpdateUserTest">
+        </class>
+            <class name="video8.DeleteUserTest">
+        </class>
+        </classes>
+    </test>
+</suite>

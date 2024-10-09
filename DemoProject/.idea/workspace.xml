@@ -6,10 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="31fa4849-edbd-4d23-a715-8624f77b651d" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/json-server/students.json" beforeDir="false" afterPath="$PROJECT_DIR$/json-server/students.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/video2/postHashMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/video2/postHashMap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/video2/postUsingPojoClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/video2/postUsingPojoClass.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/video4/ParsingJsonResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/video4/ParsingJsonResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,47 +33,64 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "TestNG.CookiesDemo.executor": "Run",
-    "TestNG.CookiesDemo.getCookiesInfo.executor": "Run",
-    "TestNG.CookiesDemo.testCookies.executor": "Run",
-    "TestNG.HTTPRequests (1).executor": "Run",
-    "TestNG.HTTPRequests.createUser.executor": "Run",
-    "TestNG.HTTPRequests.executor": "Run",
-    "TestNG.HTTPRequests.getCreatedUser.executor": "Run",
-    "TestNG.HTTPRequests.getUsers.executor": "Run",
-    "TestNG.HTTPRequests.testDeleteCreatedStudent.executor": "Run",
-    "TestNG.HTTPRequests.testPostUsingHashMap.executor": "Run",
-    "TestNG.HeadersDemo.executor": "Run",
-    "TestNG.JSONSchemaValidation.executor": "Run",
-    "TestNG.JSONSchemaValidation.jsonSchemaValidation.executor": "Run",
-    "TestNG.LoggingDemo.testQueryAndPathParameters.executor": "Run",
-    "TestNG.ParsingJsonResponse.executor": "Run",
-    "TestNG.ParsingJsonResponse.testJsonResponse.executor": "Run",
-    "TestNG.ParsingJsonResponse.testJsonResponse1.executor": "Run",
-    "TestNG.ParsingJsonResponse.testJsonResponse2.executor": "Run",
-    "TestNG.PathAndQueryParameters.testQueryAndPathParameters.executor": "Run",
-    "TestNG.PostHashMap.executor": "Run",
-    "TestNG.SerializationDeserialization.convertPojoToJson.executor": "Run",
-    "TestNG.SerializationDeserialization.executor": "Run",
-    "TestNG.postHashMap.executor": "Run",
-    "TestNG.postHashMap.testPostUsingHashMap.executor": "Run",
-    "TestNG.postJsonLibrary.executor": "Run",
-    "TestNG.postJsonLibrary.testPostUsingJsonObject.executor": "Run",
-    "TestNG.postUsingExternalJsonFile.executor": "Run",
-    "TestNG.postUsingExternalJsonFile.testUsingExternalJsonFile.executor": "Run",
-    "TestNG.postUsingPojoClass.executor": "Run",
-    "TestNG.postUsingPojoClass.testPostUsingPOJO.executor": "Run",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "settings.editor.selected.configurable": "editor.preferences.completion"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;TestNG./Users/andriisavonov/Projects/Java/DemoProject/src/test/java/video8/testng.xml.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.Authentications.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.Authentications.testBasicAuthentication.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.CookiesDemo.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.CookiesDemo.getCookiesInfo.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.CookiesDemo.testCookies.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.CreateUser.createUser.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.DeleteUser.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.FakerDataGenerator.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.FakerDataGenerator.testGenerateDummyData.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.GetUser.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.GetUser.getUser.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.HTTPRequests (1).executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.HTTPRequests.createUser.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.HTTPRequests.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.HTTPRequests.getCreatedUser.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.HTTPRequests.getUsers.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.HTTPRequests.testDeleteCreatedStudent.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.HTTPRequests.testPostUsingHashMap.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.HeadersDemo.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.JSONSchemaValidation.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.JSONSchemaValidation.jsonSchemaValidation.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.LoggingDemo.testQueryAndPathParameters.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.ParsingJsonResponse.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.ParsingJsonResponse.testJsonResponse.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.ParsingJsonResponse.testJsonResponse1.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.ParsingJsonResponse.testJsonResponse2.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.PathAndQueryParameters.testQueryAndPathParameters.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.PostHashMap.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.SerializationDeserialization.convertPojoToJson.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.SerializationDeserialization.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.UpdateUser.updateUser.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.postHashMap.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.postHashMap.testPostUsingHashMap.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.postJsonLibrary.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.postJsonLibrary.testPostUsingJsonObject.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.postUsingExternalJsonFile.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.postUsingExternalJsonFile.testUsingExternalJsonFile.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.postUsingPojoClass.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.postUsingPojoClass.testPostUsingPOJO.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.test.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.test.parsingData.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.video8.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/test/java/video8" />
       <recent name="$PROJECT_DIR$/src/test/java" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -84,17 +98,17 @@
       <recent name="video2" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.postUsingPojoClass">
-    <configuration name="JSONSchemaValidation" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.test.parsingData">
+    <configuration name="DeleteUserTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="DemoProject" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="video6.*" />
+          <option name="PATTERN" value="video8.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="video6" />
-      <option name="MAIN_CLASS_NAME" value="video6.JSONSchemaValidation" />
+      <option name="PACKAGE_NAME" value="video8" />
+      <option name="MAIN_CLASS_NAME" value="video8.DeleteUserTest" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -102,17 +116,44 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="JSONSchemaValidation.jsonSchemaValidation" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="/Users/andriisavonov/Projects/Java/DemoProject/src/test/java/video8/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="DemoProject" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/java/video8/testng.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="DemoProject" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="video6.*" />
+          <option name="PATTERN" value="video4.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="video6" />
-      <option name="MAIN_CLASS_NAME" value="video6.JSONSchemaValidation" />
-      <option name="METHOD_NAME" value="jsonSchemaValidation" />
+      <option name="PACKAGE_NAME" value="video4" />
+      <option name="MAIN_CLASS_NAME" value="video4.test" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test.parsingData" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="DemoProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="video4.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="video4" />
+      <option name="MAIN_CLASS_NAME" value="video4.test" />
+      <option name="METHOD_NAME" value="parsingData" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -120,52 +161,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SerializationDeserialization" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="video8" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="DemoProject" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="video6.*" />
+          <option name="PATTERN" value="video8.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="video6" />
-      <option name="MAIN_CLASS_NAME" value="video6.SerializationDeserialization" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SerializationDeserialization.convertPojoToJson" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="DemoProject" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="video6.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="video6" />
-      <option name="MAIN_CLASS_NAME" value="video6.SerializationDeserialization" />
-      <option name="METHOD_NAME" value="convertPojoToJson" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="postUsingPojoClass" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="DemoProject" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="video2.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="video2" />
-      <option name="MAIN_CLASS_NAME" value="video2.postUsingPojoClass" />
-      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="PACKAGE_NAME" value="video8" />
+      <option name="TEST_OBJECT" value="PACKAGE" />
       <properties />
       <listeners />
       <method v="2">
@@ -174,11 +179,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.postUsingPojoClass" />
-        <item itemvalue="TestNG.SerializationDeserialization" />
-        <item itemvalue="TestNG.SerializationDeserialization.convertPojoToJson" />
-        <item itemvalue="TestNG.JSONSchemaValidation" />
-        <item itemvalue="TestNG.JSONSchemaValidation.jsonSchemaValidation" />
+        <item itemvalue="TestNG.test.parsingData" />
+        <item itemvalue="TestNG.test" />
+        <item itemvalue="TestNG./Users/andriisavonov/Projects/Java/DemoProject/src/test/java/video8/testng.xml" />
+        <item itemvalue="TestNG.video8" />
+        <item itemvalue="TestNG.DeleteUserTest" />
       </list>
     </recent_temporary>
   </component>
