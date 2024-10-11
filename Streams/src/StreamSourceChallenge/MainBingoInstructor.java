@@ -31,14 +31,14 @@ public class MainBingoInstructor {
         seed += 15;
         int rSeed = seed;
         var streamO = Stream.generate(() -> getCounter())
-                        .limit(15)
-                                .map(i -> "O" + (rSeed + i));
+                .limit(15)
+                .map(i -> "O" + (rSeed + i));
 
         var streamBI = Stream.concat(streamB, streamI);
         var streamNG = Stream.concat(streamN, streamG);
         var streamBING = Stream.concat(streamBI, streamNG);
         Stream.concat(streamBING, streamO)
-                        .forEach(System.out::println);
+                .forEach(System.out::println);
 
 
 //        streamO.forEach(System.out::println); // can't use already used stream pipeline
@@ -47,5 +47,5 @@ public class MainBingoInstructor {
     private static int getCounter() {
         return counter++;
     }
- }
+}
 
