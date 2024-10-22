@@ -1,5 +1,8 @@
 package api;
 
+import io.restassured.filter.log.RequestLoggingFilter;
+import io.restassured.filter.log.ResponseLoggingFilter;
+import io.restassured.response.Response;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -14,14 +17,15 @@ public class ReqresTest {
 
     @Test
     public void checkAvatarAndIdTest() {
-        List<UserData> users = given()
+        Response response = given()
+                .filters(new RequestLoggingFilter(), new ResponseLoggingFilter())
                 .contentType(JSON)
                 .baseUri("https://reqres.in/")
                 .queryParam("page", 2)
                 .when()
-                .get("/api/users")
-                .then().log().all()
-                .extract().body().jsonPath().getList("data", UserData.class);
+                .get("/api/users");
+
+        List<UserData> users = response.body().jsonPath().getList("data", UserData.class);
 
         users.forEach(u -> Assert.assertTrue(u.getAvatar().contains(u.getId().toString())));
         users.forEach(u -> Assert.assertTrue(u.getAvatar().endsWith("image.jpg")));

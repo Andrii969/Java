@@ -7,6 +7,7 @@
     <list default="true" id="31fa4849-edbd-4d23-a715-8624f77b651d" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ReqresAutomation/src/test/java/api/ReqresTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ReqresAutomation/src/test/java/api/ReqresTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,6 +36,7 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;TestNG./Users/andriisavonov/Projects/Java/DemoProject/src/test/java/video8/testng.xml.executor&quot;: &quot;Run&quot;,
@@ -98,20 +100,10 @@
       <recent name="video2" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.test.parsingData">
-    <configuration name="DeleteUserTest" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="DemoProject" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="video8.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="video8" />
-      <option name="MAIN_CLASS_NAME" value="video8.DeleteUserTest" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -179,11 +171,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="TestNG.test.parsingData" />
         <item itemvalue="TestNG.test" />
         <item itemvalue="TestNG./Users/andriisavonov/Projects/Java/DemoProject/src/test/java/video8/testng.xml" />
         <item itemvalue="TestNG.video8" />
-        <item itemvalue="TestNG.DeleteUserTest" />
       </list>
     </recent_temporary>
   </component>
