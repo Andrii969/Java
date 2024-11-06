@@ -121,7 +121,7 @@ public class Student {
                 getRandomValue("AU", "CA", "CN", "GB", "IN", "UA", "US"),
                 random.nextInt(2015, maxYear),
                 random.nextInt(18, 90),
-                getRandomValue("M", "F", "U"),
+                getRandomValue("M", "F"),
                 random.nextBoolean(),
                 courses
         );
