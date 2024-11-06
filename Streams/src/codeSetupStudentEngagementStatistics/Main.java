@@ -22,7 +22,6 @@ public class Main {
         var maleStudents = students.filter(student -> student.getGender().equals("M"));
         System.out.println("# of male students " + maleStudents.count());
 
-
         // // // // // // // // // // // // // // // // // //
 
         List<Student> students2 = Stream.generate(() -> Student.getRandomStudent(jmc, pymc))
