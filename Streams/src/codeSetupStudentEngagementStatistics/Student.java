@@ -1,9 +1,7 @@
 package codeSetupStudentEngagementStatistics;
 
 import java.time.LocalDate;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Random;
+import java.util.*;
 
 public class Student {
 
@@ -114,20 +112,29 @@ public class Student {
         return data[random.nextInt(data.length)];
     }
 
+    private static Course[] getRandomSelection(Course... courses) {
+        int courseCount = random.nextInt(1, courses.length + 1);
+        List<Course> courseList = new ArrayList<>(List.of(courses));
+        Collections.shuffle(courseList);
+        List<Course> selectedCourses = courseList.subList(0, courseCount);
+        return selectedCourses.toArray(new Course[0]); // Course[] courseArray = selectedCourses.toArray(new Course[0]); return courseArray;
+    }
+
     public static Student getRandomStudent(Course... courses) {
         int maxYear = LocalDate.now().getYear() + 1;
+        Course[] randomCourses = getRandomSelection(courses);
 
         Student student = new Student(
                 getRandomValue("AU", "CA", "CN", "GB", "IN", "UA", "US"),
                 random.nextInt(2015, maxYear),
                 random.nextInt(18, 90),
-                getRandomValue("M", "F"),
+                getRandomValue("M", "F", "U"),
                 random.nextBoolean(),
-                courses
+                randomCourses
         );
 
-        for (Course c : courses) {
-            int lecture = random.nextInt(1, c.lectureCount());
+        for (Course c : randomCourses) {
+            int lecture = random.nextInt(30, c.lectureCount());
             int year = random.nextInt(student.getYearEnrolled(), maxYear);
             int month = random.nextInt(1, 13);
             if (year == (maxYear - 1)) {
