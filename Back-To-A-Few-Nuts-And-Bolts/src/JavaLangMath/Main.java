@@ -64,6 +64,5 @@ public class Main {
         System.out.println("-".repeat(30));
 
         random.ints(10, 1, 10+1).forEach(System.out::println);
-
     }
 }
