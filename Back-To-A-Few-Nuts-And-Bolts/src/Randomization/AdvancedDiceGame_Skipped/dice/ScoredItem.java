@@ -1,4 +1,4 @@
-package Randomization.AdvancedDiceGame.dice;
+package Randomization.AdvancedDiceGame_Skipped.dice;
 
 import java.util.Comparator;
 import java.util.HashMap;

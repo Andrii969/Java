@@ -1,8 +1,8 @@
-package Randomization;
+package JavaLangMath;
 
 import java.util.Random;
 
-public class Main {
+public class AnotherMain {
 
     public static void main(String[] args) {
 

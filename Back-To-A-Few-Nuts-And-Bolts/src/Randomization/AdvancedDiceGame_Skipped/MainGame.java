@@ -1,4 +1,4 @@
-package Randomization.AdvancedDiceGame;
+package Randomization.AdvancedDiceGame_Skipped;
 
 public class MainGame {
 

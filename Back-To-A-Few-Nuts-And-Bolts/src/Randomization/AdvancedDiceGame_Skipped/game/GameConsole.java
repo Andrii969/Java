@@ -1,4 +1,4 @@
-package Randomization.AdvancedDiceGame.game;
+package Randomization.AdvancedDiceGame_Skipped.game;
 
 import java.util.Scanner;
 
